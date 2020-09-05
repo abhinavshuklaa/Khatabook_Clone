@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<RelativeLayout
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@android:color/white">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="40dp"
+        android:layout_height="45dp"
+        android:src="@drawable/logo"/>
+
+    <TextView
+        android:id="@+id/tvKhatabook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/logo"
+        android:textSize="18sp"
+        android:text="@string/khatabook"
+        android:textColor="@color/red_khatabook"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/drop_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/drop_down_menu"
+        android:layout_alignParentEnd="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/english"
+        android:layout_toStartOf="@+id/drop_down"
+        android:textSize="14sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/blue_privacy"/>
+
+
+</RelativeLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="15dp"
+        tools:context=".MainActivity">
+
+
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="261dp"
+    android:src="@drawable/dhoni_main_paga"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tvmanaga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/card"
+        android:layout_marginTop="20dp"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_centerHorizontal="true"
+        android:text="@string/manage_your_business_send"/>
+
+    <TextView
+        android:id="@+id/tvremainder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvmanaga"
+        android:layout_centerHorizontal="true"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/remainders_and_receive_payments"
+        android:textColor="@android:color/black"/>
+
+<View
+    android:id="@+id/view"
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@color/grey"
+    android:layout_marginBottom="5dp"
+    android:layout_below="@+id/tvremainder"/>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:layout_above="@+id/button"
+    android:layout_below="@+id/view">
+
+
+    <ImageView
+        android:id="@+id/secure"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/sec_logo"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/secure"
+        android:textColor="@color/grey"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="30dp"
+        android:text="@string/bottomText"/>
+
+
+</RelativeLayout>
+
+<Button
+    android:id="@+id/button"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/bottom"
+    android:backgroundTint="@color/color_button"
+    android:layout_margin="15dp"
+    android:hint="@string/start_using_khatabook"
+    android:textColorHint="@android:color/white"/>
+
+
+<RelativeLayout
+    android:id="@+id/bottom"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true">
+
+
+    <TextView
+        android:id="@+id/log"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:text="@string/by_logging_in_you_agree_to_our"
+        android:textColor="@color/grey"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/privacy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/log"
+        android:textSize="12sp"
+        android:layout_marginStart="1dp"
+        android:text="@string/privacy_policy"
+        android:textColor="@color/blue_privacy"/>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_below="@+id/privacy"
+        android:layout_toEndOf="@+id/log"
+        android:layout_marginEnd="40dp"
+        android:background="@color/blue_privacy"/>
+
+
+    <TextView
+        android:id="@+id/amp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/privacy"
+        android:textColor="@color/grey"
+        android:textSize="12sp"
+        android:text="@string/amp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/amp"
+        android:textSize="12sp"
+        android:text="@string/t_amp_c"
+        android:textColor="@color/blue_privacy"/>
+
+
+</RelativeLayout>
+
+
+</RelativeLayout>

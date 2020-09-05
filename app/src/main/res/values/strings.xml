@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Khatabook</string>
+    <string name="english">English</string>
+    <string name="bottomText">Trusted by 2 Crore+ business across India</string>
+    <string name="khatabook">Khatabook</string>
+    <string name="manage_your_business_send">Manage your business: Send</string>
+    <string name="remainders_and_receive_payments">remainders and receive payments !</string>
+    <string name="start_using_khatabook">START USING KHATABOOK</string>
+    <string name="by_logging_in_you_agree_to_our">By logging-in you agree to our </string>
+    <string name="privacy_policy"> Privacy Policy</string>
+    <string name="amp"><![CDATA[&]]></string>
+    <string name="t_amp_c"><![CDATA[T&C]]></string>
+</resources>
