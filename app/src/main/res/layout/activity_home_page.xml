@@ -6,20 +6,74 @@
     android:layout_height="match_parent"
     tools:context=".Home_page">
 
+
+
+
     <RelativeLayout
         android:id="@+id/rlToolbarHome"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="100dp"
         android:background="@color/color_button">
 
         <ImageView
-            android:layout_width="match_parent"
+            android:id="@+id/imbook"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@color/color_button"
-            android:src="@drawable/hunger_hunt_12"
-            android:layout_centerInParent="true"/>
+            android:src="@drawable/new_book"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/tvhung"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:text="Hunger Hunt"
+            android:layout_toRightOf="@+id/imbook"
+            android:layout_centerVertical="true"
+            android:textSize="20sp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tvhung"
+            android:layout_centerVertical="true"
+            android:src="@drawable/d_1"/>
+
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="5dp"
+            android:src="@drawable/right_icons_0"
+            android:layout_centerVertical="true"/>
+
+
+
+
+
+
 
     </RelativeLayout>
+
+
+
+    <!--    <RelativeLayout-->
+<!--        android:id="@+id/rlToolbarHome"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="80dp"-->
+<!--        android:background="@color/color_button">-->
+
+<!--        <ImageView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@color/color_button"-->
+<!--            android:src="@drawable/hunger_hunt_12"-->
+<!--            android:layout_centerInParent="true"/>-->
+
+<!--    </RelativeLayout>-->
 
     <ImageView
         android:layout_width="match_parent"
