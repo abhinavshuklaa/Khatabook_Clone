@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/app_logo"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/logo"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/app_logo"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/red_khatabook"
+            android:text="Khatabook"
+            android:layout_margin="15dp"/>
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/toolbar"
+        android:background="@color/grey"
+        android:layout_marginTop="8dp"/>
+
+    <RelativeLayout
+        android:id="@+id/trust_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_line"
+        android:layout_margin="20dp">
+
+        <ImageView
+            android:id="@+id/secure_logo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/sec_logo"/>
+
+        <TextView
+            android:id="@+id/tvTrusted"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/secure_logo"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:textColor="@color/grey"
+            android:text="Trusted by 2 Crore+ business across "/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTrusted"
+            android:textSize="15sp"
+            android:textColor="@color/grey"
+            android:text="India"
+            android:layout_toEndOf="@+id/secure_logo"
+            android:layout_marginStart="20dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/contact_details"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/trust_line"
+        android:background="@color/background_otp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/box_no"
+            android:layout_margin="20dp"/>
+
+        <ImageView
+            android:id="@+id/tvnumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/mobile_no_box"
+            android:layout_margin="20dp"/>
+
+        <EditText
+            android:id="@+id/etMobileENter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tvnumber"
+            android:hint="Enter Mobile No."
+            android:layout_alignBottom="@+id/tvnumber"
+            android:layout_alignLeft="@+id/tvnumber"
+            android:layout_alignRight="@+id/tvnumber"
+            android:backgroundTint="@android:color/white"
+            android:textColor="@android:color/black"/>
+
+
+        <Button
+            android:id="@+id/btGetPin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/color_button"
+            android:textColor="@android:color/white"
+            android:text="GET PIN"
+            android:textSize="16sp"/>
+
+
+
+
+
+
+
+        <ImageView
+            android:id="@+id/flag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_india_flag"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="30dp"/>
+
+        <TextView
+            android:id="@+id/tvCountryCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" +91"
+            android:textColor="@android:color/black"
+            android:layout_toEndOf="@+id/flag"
+            android:layout_marginTop="32dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tvCountryCode"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/ic_arrow_drop_down"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

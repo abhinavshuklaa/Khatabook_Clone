@@ -2,6 +2,7 @@
 <resources>
     <color name="colorPrimary">#6200EE</color>
     <color name="red_khatabook">#C82128</color>
+    <color name="background_otp">#F1F2F4</color>
     <color name="blue_privacy">#2196F3</color>
     <color name="color_button">#0752AD</color>
     <color name="colorPrimaryDark">#2196F3</color>

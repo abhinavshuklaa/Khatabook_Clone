@@ -31,11 +31,11 @@
         android:textStyle="bold"/>
 
     <ImageView
-        android:id="@+id/drop_down"
+        android:id="@+id/btdrop_down"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="12dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="14dp"
         android:src="@drawable/drop_down_menu"
         android:layout_alignParentEnd="true"/>
 
@@ -43,9 +43,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/english"
-        android:layout_toStartOf="@+id/drop_down"
-        android:textSize="14sp"
-        android:layout_marginTop="10dp"
+        android:layout_toStartOf="@+id/btdrop_down"
+        android:textSize="16sp"
+        android:layout_marginTop="15dp"
         android:textColor="@color/blue_privacy"/>
 
 
@@ -64,6 +64,7 @@
 <ImageView
     android:layout_width="match_parent"
     android:layout_height="261dp"
+    android:layout_marginTop="10dp"
     android:src="@drawable/dhoni_main_paga"/>
 
     </androidx.cardview.widget.CardView>
@@ -121,6 +122,7 @@
         android:layout_height="wrap_content"
         android:layout_toEndOf="@+id/secure"
         android:textColor="@color/grey"
+        android:textSize="20sp"
         android:layout_centerVertical="true"
         android:layout_marginEnd="30dp"
         android:text="@string/bottomText"/>
@@ -150,10 +152,10 @@
         android:id="@+id/log"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="42dp"
+        android:layout_marginStart="48dp"
         android:text="@string/by_logging_in_you_agree_to_our"
         android:textColor="@color/grey"
-        android:textSize="12sp"/>
+        android:textSize="14sp"/>
 
     <TextView
         android:id="@+id/privacy"
@@ -161,12 +163,12 @@
         android:layout_height="wrap_content"
         android:layout_toEndOf="@+id/log"
         android:textSize="12sp"
-        android:layout_marginStart="1dp"
+        android:layout_marginStart="2dp"
         android:text="@string/privacy_policy"
         android:textColor="@color/blue_privacy"/>
 
     <View
-        android:layout_width="wrap_content"
+        android:layout_width="70dp"
         android:layout_height="1dp"
         android:layout_below="@+id/privacy"
         android:layout_toEndOf="@+id/log"
