@@ -7,6 +7,7 @@ import android.graphics.Paint;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -14,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     private Button btButton;
     private long backPressedTime;
     private Toast backToast;
+    private ImageView btdrop_down;
 
 
     @Override
@@ -21,9 +23,15 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
-
-
+        btdrop_down=findViewById(R.id.btdrop_down);
+        btdrop_down.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent1=new Intent(MainActivity.this,Language_dialog.class);
+                    startActivity(intent1);
+ 
+            }
+        });
 
 
         btButton=findViewById(R.id.button);
