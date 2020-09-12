@@ -9,10 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ClickOnMore"></activity>
+        <activity android:name=".Invite_page"></activity>
+        <activity android:name=".ClickOnMore" />
         <activity
             android:name=".Language_dialog"
-            android:theme="@style/Theme.AppCompat.Dialog.Alert"></activity>
+            android:theme="@style/Theme.AppCompat.Dialog.Alert" />
         <activity android:name=".Home_page" />
         <activity android:name=".start_up_layout">
             <intent-filter>
