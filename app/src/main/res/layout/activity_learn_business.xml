@@ -83,6 +83,7 @@
             android:layout_height="wrap_content"
             android:gravity="right"
             android:layout_marginTop="20dp"
+            android:textStyle="bold"
             android:layout_marginEnd="10dp"
             android:text="@string/evaluate_obligations_before_loan_process"
             android:textColor="@android:color/black"/>
@@ -107,6 +108,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="right"
+                android:textStyle="bold"
                 android:layout_marginTop="20dp"
                 android:layout_marginEnd="10dp"
                 android:text="@string/video_2"
@@ -133,6 +135,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="right"
                 android:layout_marginTop="20dp"
+                android:textStyle="bold"
                 android:layout_marginEnd="10dp"
                 android:text="@string/video_3"
                 android:textColor="@android:color/black"/>
@@ -158,6 +161,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="right"
                 android:layout_marginTop="20dp"
+                android:textStyle="bold"
                 android:layout_marginEnd="5dp"
                 android:text="@string/video_4"
                 android:textColor="@android:color/black"/>
@@ -183,6 +187,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="right"
                 android:layout_marginTop="20dp"
+                android:textStyle="bold"
                 android:layout_marginEnd="15dp"
                 android:text="@string/video_5"
                 android:textColor="@android:color/black"/>
@@ -209,6 +214,7 @@
                 android:gravity="right"
                 android:layout_marginTop="20dp"
                 android:layout_marginEnd="15dp"
+                android:textStyle="bold"
                 android:text="@string/video_6"
                 android:textColor="@android:color/black"/>
 
@@ -233,6 +239,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="right"
                 android:layout_marginTop="20dp"
+                android:textStyle="bold"
                 android:layout_marginEnd="15dp"
                 android:text="Evaluate Obligations before Loan process"
                 android:textColor="@android:color/black"/>
@@ -258,6 +265,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="right"
                 android:layout_marginTop="20dp"
+                android:textStyle="bold"
                 android:layout_marginEnd="15dp"
                 android:text="Evaluate Obligations before Loan process"
                 android:textColor="@android:color/black"/>
@@ -282,6 +290,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="right"
+                android:textStyle="bold"
                 android:layout_marginTop="20dp"
                 android:layout_marginEnd="15dp"
                 android:text="Evaluate Obligations before Loan process"
@@ -307,6 +316,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="right"
+                android:textStyle="bold"
                 android:layout_marginTop="20dp"
                 android:layout_marginEnd="15dp"
                 android:text="Evaluate Obligations before Loan process"
@@ -333,6 +343,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="right"
                 android:layout_marginTop="20dp"
+                android:textStyle="bold"
                 android:layout_marginEnd="15dp"
                 android:text="Evaluate Obligations before Loan process"
                 android:textColor="@android:color/black"/>
@@ -358,6 +369,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="right"
                 android:layout_marginTop="20dp"
+                android:textStyle="bold"
                 android:layout_marginEnd="15dp"
                 android:text="Evaluate Obligations before Loan process"
                 android:textColor="@android:color/black"/>
@@ -384,6 +396,7 @@
                 android:gravity="right"
                 android:layout_marginTop="20dp"
                 android:layout_marginEnd="15dp"
+                android:textStyle="bold"
                 android:text="Evaluate Obligations before Loan process"
                 android:textColor="@android:color/black"/>
 
@@ -407,8 +420,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="right"
+                android:textStyle="bold"
                 android:layout_marginTop="20dp"
-                android:layout_marginEnd="5dp"
+                android:layout_marginEnd="15dp"
                 android:text="Evaluate Obligations before Loan process"
                 android:textColor="@android:color/black"/>
 
