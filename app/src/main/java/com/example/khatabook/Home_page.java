@@ -8,12 +8,19 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
 public class Home_page extends AppCompatActivity {
     private ImageView btImMoreButton;
-    private ImageView btButtonAddCustomers;
+    private Button btButtonAddCustomers;
+    private ImageView imforward;
+    private Animation animation;
+    private Button btLearnBusiness;
+
 
     private static final int CONTACTS_PERMISSION_REQ_CODE = 101;
 
@@ -23,6 +30,24 @@ public class Home_page extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_page);
+
+        btLearnBusiness=findViewById(R.id.btLearnBusiness);
+        btLearnBusiness.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intentlearn=new Intent(Home_page.this,learnBusiness.class);
+                startActivity(intentlearn);
+            }
+        });
+
+
+
+
+        imforward=findViewById(R.id.imforward);
+        animation= AnimationUtils.loadAnimation(this,R.anim.anim);
+        imforward.startAnimation(animation);
+
+
 
         btButtonAddCustomers=findViewById(R.id.imButtonAddCustomers);
          btButtonAddCustomers.setOnClickListener(new View.OnClickListener() {

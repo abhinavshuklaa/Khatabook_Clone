@@ -12,13 +12,13 @@
     <RelativeLayout
         android:id="@+id/rlToolbarHome"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="80dp"
         android:background="@color/color_button">
 
         <ImageView
             android:id="@+id/imbook"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:src="@drawable/new_book"
             android:layout_centerVertical="true"/>
 
@@ -30,29 +30,25 @@
             android:text="Hunger Hunt"
             android:layout_toRightOf="@+id/imbook"
             android:layout_centerVertical="true"
-            android:textSize="20sp"/>
+            android:textSize="22sp"/>
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_toRightOf="@+id/tvhung"
             android:layout_centerVertical="true"
-            android:src="@drawable/d_1"/>
+            android:src="@drawable/ic_baseline_keyboard_arrow_down_24"/>
 
 
 
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
             android:layout_marginEnd="5dp"
-            android:src="@drawable/right_icons_0"
+            android:src="@drawable/tool_ico"
             android:layout_centerVertical="true"/>
-
-
-
-
 
 
 
@@ -75,36 +71,165 @@
 
 <!--    </RelativeLayout>-->
 
+<!--    <ImageView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_above="@+id/rlAdd"-->
+<!--        android:layout_below="@+id/rlToolbarHome"-->
+<!--        android:background="@drawable/middle_body_1"/>-->
+
+
+    <RelativeLayout
+        android:id="@+id/rlMiddleButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlToolbarHome"
+        android:background="@color/bottomToolbarBody">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="231dp"
+                android:src="@drawable/mid"/>
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+<Button
+    android:id="@+id/btLearnBusiness"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="168dp"
+    android:layout_marginRight="50dp"
+    android:layout_alignParentRight="true"
+    android:background="?android:attr/selectableItemBackground"/>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rlpdf"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/rlMiddleButtons">
+
+        <ImageView
+            android:id="@+id/imSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_baseline_search_24"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/grey"
+            android:layout_centerVertical="true"
+            android:text="0 Customers"
+            android:layout_toEndOf="@+id/imSearch"
+            android:layout_margin="10dp"/>
+
+        <ImageView
+            android:id="@+id/impdf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pdf_24"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ter"
+            android:layout_marginTop="4dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/impdf"
+            android:layout_marginEnd="20dp"/>
+
+
+
+    </RelativeLayout>
+
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/rlpdf"
+    android:backgroundTint="@color/mid_pic"
+    android:layout_above="@+id/rlAdd">
+
+
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_above="@+id/rlAdd"
-        android:layout_below="@+id/rlToolbarHome"
-        android:background="@drawable/middle_body_1"/>
+        android:layout_height="wrap_content"
+        android:scaleType="fitCenter"
+        android:src="@drawable/mid_2"/>
+
+
+</androidx.cardview.widget.CardView>
+
+
 
 
     <RelativeLayout
         android:id="@+id/rlAdd"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="80dp"
         android:layout_above="@+id/llBottomHomeAndMore"
         android:background="@color/bottombuttonBackground">
 
 
         <ImageView
+            android:id="@+id/imforward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_baseline_arrow_forward_24" />
+
+        <Button
             android:id="@+id/imButtonAddCustomers"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@drawable/button_back"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="5dp"
             android:layout_alignParentEnd="true"
-            android:src="@drawable/add_customers_button_1"/>
+            android:drawableLeft="@drawable/ic_baseline_person_add_24"
+            android:paddingLeft="20dp"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:text="ADD CUSTOMER"/>
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/arrow_animate_1"
-        android:layout_alignParentLeft="true"
-        android:layout_marginStart="10dp"
-        android:layout_centerVertical="true"/>
+
+
+
+
+
+
+
+<!--        <ImageView-->
+<!--            android:id="@+id/imButtonAddCustomers"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:src="@drawable/add_customers_button_1"/>-->
+
+<!--    <ImageView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:src="@drawable/arrow_animate_1"-->
+<!--        android:layout_alignParentLeft="true"-->
+<!--        android:layout_marginStart="10dp"-->
+<!--        android:layout_centerVertical="true"/>-->
 
 
 
@@ -123,15 +248,29 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:src="@drawable/home_blue_1"/>
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/homeee"/>
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ri"
+            android:layout_weight="1"/>
+
 
 
         <ImageView
             android:id="@+id/btImMoreButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
             android:layout_weight="1"
-            android:src="@drawable/more_icon_1"/>
+            android:layout_marginTop="4dp"
+            android:src="@drawable/mor" />
+
     </LinearLayout>
 
 

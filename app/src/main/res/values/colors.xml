@@ -2,12 +2,15 @@
 <resources>
     <color name="colorPrimary">#6200EE</color>
     <color name="red_khatabook">#C82128</color>
+    <color name="buttonAdd">#A80852</color>
     <color name="background_otp">#F1F2F4</color>
     <color name="blue_privacy">#2196F3</color>
     <color name="color_button">#0752AD</color>
     <color name="bottomToolbarBody">#0652AE</color>
     <color name="bottombuttonBackground">#E3F0FF</color>
     <color name="colorPrimaryDark">#2196F3</color>
+    <color name="trans">#70FF0000</color>
     <color name="grey">#A8A8A8</color>
+    <color name="mid_pic">#F1F2F4</color>
     <color name="colorAccent">#03DAC5</color>
 </resources>
