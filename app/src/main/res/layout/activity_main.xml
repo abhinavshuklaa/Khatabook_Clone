@@ -166,7 +166,10 @@
         android:textSize="12sp"
         android:layout_marginStart="2dp"
         android:text="@string/privacy_policy"
-        android:textColor="@color/blue_privacy"/>
+        android:textColor="@color/blue_privacy">
+
+
+    </TextView>
 
     <View
         android:layout_width="70dp"
@@ -187,6 +190,7 @@
         android:text="@string/amp"/>
 
     <TextView
+        android:id="@+id/terms"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_toEndOf="@+id/amp"

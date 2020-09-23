@@ -92,11 +92,11 @@
 
 
         <ImageView
+            android:id="@+id/imButtonAddCustomers"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/add_customers_button_1"
-            android:layout_alignParentEnd="true">
-        </ImageView>
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/add_customers_button_1"/>
 
     <ImageView
         android:layout_width="wrap_content"

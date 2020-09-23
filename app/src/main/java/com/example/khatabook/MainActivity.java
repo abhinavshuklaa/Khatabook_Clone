@@ -2,10 +2,14 @@ package com.example.khatabook;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Paint;
 import android.os.Bundle;
 import android.view.View;
+import android.webkit.WebSettings;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -16,12 +20,39 @@ public class MainActivity extends AppCompatActivity {
     private long backPressedTime;
     private Toast backToast;
     private ImageView btdrop_down;
+    private TextView tvPrivacy;
+    private TextView tvTerms;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        tvTerms=findViewById(R.id.terms);
+        tvTerms.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(MainActivity.this,termsAndCondition.class);
+                intent.putExtra("urlTerms","https://khatabook.com/terms");
+                startActivity(intent);
+
+            }
+        });
+
+
+        tvPrivacy=findViewById(R.id.privacy);
+        tvPrivacy.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(MainActivity.this,webview.class);
+                intent.putExtra("url","https://khatabook.com/privacy.html");
+                startActivity(intent);
+
+
+
+            }
+        });
 
         btdrop_down=findViewById(R.id.btdrop_down);
         btdrop_down.setOnClickListener(new View.OnClickListener() {
@@ -66,4 +97,6 @@ public class MainActivity extends AppCompatActivity {
 backPressedTime=System.currentTimeMillis();
 
     }
+
+
 }
