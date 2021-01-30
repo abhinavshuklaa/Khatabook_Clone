@@ -15,7 +15,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".video_activity_1"></activity>
+        <activity android:name=".VideoView_Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".video_activity_1" />
         <activity android:name=".learnBusiness" />
         <activity android:name=".termsAndCondition" />
         <activity android:name=".webview" />
@@ -26,11 +33,7 @@
             android:theme="@style/Theme.AppCompat.Dialog.Alert" />
         <activity android:name=".Home_page" />
         <activity android:name=".start_up_layout">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".otp_validation" />
         <activity android:name=".MainActivity">

@@ -11,6 +11,7 @@ import java.util.TimerTask;
 public class start_up_layout extends AppCompatActivity {
     Timer timer;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
