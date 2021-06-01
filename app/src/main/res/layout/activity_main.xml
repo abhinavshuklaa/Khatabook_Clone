@@ -67,6 +67,7 @@
 <ImageView
     android:layout_width="match_parent"
     android:layout_height="261dp"
+    android:scaleType="centerCrop"
     android:layout_marginTop="10dp"
     android:src="@drawable/dhoni_main_paga"/>
 
@@ -79,6 +80,7 @@
         android:layout_below="@+id/card"
         android:layout_marginTop="20dp"
         android:textSize="18sp"
+        android:fontFamily="sans-serif-medium"
         android:textStyle="bold"
         android:textColor="@android:color/black"
         android:layout_centerHorizontal="true"
@@ -93,6 +95,7 @@
         android:textSize="18sp"
         android:textStyle="bold"
         android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-medium"
         android:layout_marginBottom="10dp"
         android:text="@string/remainders_and_receive_payments"
         android:textColor="@android:color/black"/>
