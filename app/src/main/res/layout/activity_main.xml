@@ -28,6 +28,7 @@
         android:layout_toEndOf="@+id/logo"
         android:textSize="20sp"
         android:text="@string/khatabook"
+        android:fontFamily="sans-serif-medium"
         android:textColor="@color/red_khatabook"
         android:textStyle="bold"/>
 
@@ -46,6 +47,7 @@
         android:text="@string/english"
         android:layout_toStartOf="@+id/btdrop_down"
         android:textSize="18sp"
+        android:fontFamily="sans-serif-medium"
         android:layout_marginTop="15dp"
         android:textColor="@color/blue_privacy"/>
 
