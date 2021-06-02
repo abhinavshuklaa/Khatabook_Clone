@@ -26,7 +26,7 @@
             android:textStyle="bold"
             android:textSize="20sp"
             android:textColor="@color/red_khatabook"
-            android:text="Khatabook"
+            android:text="@string/khatabook"
             android:layout_margin="15dp"/>
 
     </RelativeLayout>

@@ -16,4 +16,5 @@
     <string name="amp"><![CDATA[&]]></string>
     <string name="t_amp_c"><![CDATA[T&C]]></string>
     <string name="evaluate_obligations_before_loan_process">Evaluate Obligations before Loan process</string>
+    <string name="khatabook">Khatabook</string>
 </resources>
