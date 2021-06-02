@@ -110,7 +110,7 @@
             android:textColor="@android:color/black"/>
 
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btGetPin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
