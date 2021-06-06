@@ -199,7 +199,6 @@
             android:layout_height="wrap_content"
             android:layout_toEndOf="@+id/amp"
             android:text="@string/t_amp_c"
-            android:textAlignment="inherit"
             android:textColor="@color/blue_privacy"
             android:textSize="12sp" />
 
