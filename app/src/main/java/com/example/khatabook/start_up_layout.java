@@ -25,7 +25,7 @@ public class start_up_layout extends AppCompatActivity {
                 startActivity(intent);
                 finish();
             }
-        },3000);
+        },2500);
 
 
     }
