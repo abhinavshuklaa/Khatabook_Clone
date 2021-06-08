@@ -35,8 +35,8 @@ public class Home_page extends AppCompatActivity {
         btLearnBusiness.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intentlearn=new Intent(Home_page.this,learnBusiness.class);
-                startActivity(intentlearn);
+                Intent intentLearn=new Intent(Home_page.this,learnBusiness.class);
+                startActivity(intentLearn);
             }
         });
 
