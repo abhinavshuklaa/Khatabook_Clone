@@ -17,7 +17,7 @@ import android.widget.Toast;
 public class Home_page extends AppCompatActivity {
     private ImageView btImMoreButton;
     private Button btButtonAddCustomers;
-    private ImageView imforward;
+    private ImageView imForward;
     private Animation animation;
     private Button btLearnBusiness;
 
@@ -43,9 +43,9 @@ public class Home_page extends AppCompatActivity {
 
 
 
-        imforward=findViewById(R.id.imforward);
+        imForward =findViewById(R.id.imforward);
         animation= AnimationUtils.loadAnimation(this,R.anim.anim);
-        imforward.startAnimation(animation);
+        imForward.startAnimation(animation);
 
 
 
