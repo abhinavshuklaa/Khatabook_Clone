@@ -17,6 +17,6 @@ public class termsAndCondition extends AppCompatActivity {
         String url=getIntent().getStringExtra("urlTerms");
         webView =findViewById(R.id.webviewterms);
         webView.loadUrl(url);
-
+//add some functionalities to this app
     }
 }
