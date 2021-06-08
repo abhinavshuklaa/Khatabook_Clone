@@ -259,6 +259,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:src="@drawable/ri"
+            android:scaleType="center"
             android:layout_weight="1"/>
 
 
