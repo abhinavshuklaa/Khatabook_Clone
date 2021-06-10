@@ -15,12 +15,12 @@ public class Language_dialog extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_language_dialog);
 
-        btEnglish=findViewById(R.id.btenglish);
+        btEnglish = findViewById(R.id.btenglish);
 
         btEnglish.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(Language_dialog.this,MainActivity.class);
+                Intent intent = new Intent(Language_dialog.this, MainActivity.class);
                 startActivity(intent);
             }
         });
