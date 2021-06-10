@@ -15,15 +15,15 @@ public class ClickOnMore extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_click_on_more);
 
-        buttonInvite=findViewById(R.id.buttonInvite);
+        buttonInvite = findViewById(R.id.buttonInvite);
 
-buttonInvite.setOnClickListener(new View.OnClickListener() {
-    @Override
-    public void onClick(View view) {
-        Intent intentForInvite=new Intent(ClickOnMore.this,Invite_page.class);
-        startActivity(intentForInvite);
-    }
-});
+        buttonInvite.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intentForInvite = new Intent(ClickOnMore.this, Invite_page.class);
+                startActivity(intentForInvite);
+            }
+        });
 
     }
 }
