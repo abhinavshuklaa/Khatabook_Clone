@@ -9,7 +9,8 @@
         android:id="@+id/btenglish"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/language_dialog_1" />
+        android:src="@drawable/language_dialog_1"
+        android:contentDescription="Languages" />
 
 </LinearLayout>
 
