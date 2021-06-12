@@ -14,24 +14,22 @@ public class Invite_page extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_invite_page);
-        btClickToInviteIntent=findViewById(R.id.ClickToInviteIntent);
+        btClickToInviteIntent = findViewById(R.id.ClickToInviteIntent);
 
         btClickToInviteIntent.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent inviteIntent=new Intent();
+                Intent inviteIntent = new Intent();
                 inviteIntent.setAction(Intent.ACTION_SEND);
-                inviteIntent.putExtra(Intent.EXTRA_TEXT,"http://bit.ly/khatabook-app");
+                inviteIntent.putExtra(Intent.EXTRA_TEXT, "http://bit.ly/khatabook-app");
                 inviteIntent.setType("plain/text");
 
-                if(inviteIntent.resolveActivity(getPackageManager() )!= null){
+                if (inviteIntent.resolveActivity(getPackageManager()) != null) {
                     startActivity(inviteIntent);
                 }
 
             }
         });
-
-
 
 
     }
