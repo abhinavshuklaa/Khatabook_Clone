@@ -15,41 +15,41 @@
 
         <ImageView
             android:id="@+id/imhh"
-            android:layout_margin="5dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/hh_1"
-            android:layout_centerVertical="true"/>
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:src="@drawable/hh_1" />
 
 
         <TextView
             android:id="@+id/tvhh"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toEndOf="@+id/imhh"
-            android:textSize="20sp"
-            android:textColor="@android:color/black"
-            android:textStyle="bold"
             android:layout_marginTop="15dp"
-            android:text="Hunger Hunt"/>
+            android:layout_toEndOf="@+id/imhh"
+            android:text="Hunger Hunt"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@android:color/darker_gray"
-            android:textSize="12sp"
-            android:text="Your Name"
             android:layout_below="@+id/tvhh"
-            android:layout_toEndOf="@+id/imhh"/>
+            android:layout_toEndOf="@+id/imhh"
+            android:text="Your Name"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="12sp" />
 
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/edit_box_1"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/edit_box_1" />
 
 
     </RelativeLayout>
@@ -57,138 +57,130 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/rlTop"
         android:layout_above="@+id/buttonInvite"
+        android:layout_below="@+id/rlTop"
         android:orientation="vertical">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
             android:text="Request Money "
-            android:layout_weight="1"
             android:textColor="@android:color/black"
-            android:textSize="18sp"
-            android:layout_marginTop="10dp"
-            android:layout_marginStart="20dp"/>
+            android:textSize="18sp" />
 
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:layout_marginStart="20dp"
-            android:background="@android:color/darker_gray"/>
+            android:background="@android:color/darker_gray" />
 
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
             android:text="Payment History"
-            android:layout_weight="1"
-            android:layout_marginTop="10dp"
             android:textColor="@android:color/black"
-            android:textSize="18sp"
-            android:layout_marginStart="20dp"/>
+            android:textSize="18sp" />
 
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:layout_marginStart="20dp"
-            android:background="@android:color/darker_gray"/>
+            android:background="@android:color/darker_gray" />
 
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
             android:text="QR Code"
-            android:layout_marginTop="10dp"
-            android:layout_weight="1"
             android:textColor="@android:color/black"
-            android:textSize="18sp"
-            android:layout_marginStart="20dp"/>
+            android:textSize="18sp" />
 
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:layout_marginStart="20dp"
-            android:background="@android:color/darker_gray"/>
+            android:background="@android:color/darker_gray" />
 
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
             android:text="Business Card"
-            android:layout_marginTop="10dp"
-            android:layout_weight="1"
             android:textColor="@android:color/black"
-            android:textSize="18sp"
-            android:layout_marginStart="20dp"/>
+            android:textSize="18sp" />
 
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:layout_marginStart="20dp"
-            android:background="@android:color/darker_gray"/>
+            android:background="@android:color/darker_gray" />
 
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
             android:text="Settings"
-            android:layout_marginTop="10dp"
-            android:layout_weight="1"
             android:textColor="@android:color/black"
-            android:textSize="18sp"
-            android:layout_marginStart="20dp"/>
+            android:textSize="18sp" />
 
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:layout_marginStart="20dp"
-            android:background="@android:color/darker_gray"/>
+            android:background="@android:color/darker_gray" />
 
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
             android:text="Help % Support"
-            android:layout_weight="1"
             android:textColor="@android:color/black"
-            android:textSize="18sp"
-            android:layout_marginTop="10dp"
-            android:layout_marginStart="20dp"/>
+            android:textSize="18sp" />
 
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:layout_marginStart="20dp"
-            android:background="@android:color/darker_gray"/>
+            android:background="@android:color/darker_gray" />
 
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="About Us"
-            android:layout_weight="1"
+            android:layout_marginStart="20dp"
             android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:text="About Us"
             android:textColor="@android:color/black"
-            android:textSize="18sp"
-            android:layout_marginStart="20dp"/>
+            android:textSize="18sp" />
 
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:layout_marginStart="20dp"
-            android:background="@android:color/darker_gray"/>
-
-
-
-
-
-
-
+            android:background="@android:color/darker_gray" />
 
 
     </LinearLayout>
-
 
 
     <ImageView
@@ -196,8 +188,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:src="@drawable/invt"/>
-
+        android:src="@drawable/invt" />
 
 
 </RelativeLayout>
