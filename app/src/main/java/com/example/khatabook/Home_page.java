@@ -25,53 +25,49 @@ public class Home_page extends AppCompatActivity {
     private static final int CONTACTS_PERMISSION_REQ_CODE = 101;
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_page);
 
-        btLearnBusiness=findViewById(R.id.btLearnBusiness);
+        btLearnBusiness = findViewById(R.id.btLearnBusiness);
         btLearnBusiness.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intentToLearnBusinessClass=new Intent(Home_page.this,learnBusiness.class);
+                Intent intentToLearnBusinessClass = new Intent(Home_page.this, learnBusiness.class);
                 startActivity(intentToLearnBusinessClass);
             }
         });
 
 
-
-
-        imForward =findViewById(R.id.imforward);
-        animation= AnimationUtils.loadAnimation(this,R.anim.anim);
+        imForward = findViewById(R.id.imforward);
+        animation = AnimationUtils.loadAnimation(this, R.anim.anim);
         imForward.startAnimation(animation);
 
 
+        btButtonAddCustomers = findViewById(R.id.imButtonAddCustomers);
+        btButtonAddCustomers.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                boolean isPermissionGranted = ActivityCompat.checkSelfPermission(Home_page.this, Manifest.permission.READ_CONTACTS) == PackageManager.PERMISSION_GRANTED;
+                if (!isPermissionGranted) {
+                    ActivityCompat.requestPermissions(Home_page.this, new String[]{Manifest.permission.READ_CONTACTS}, CONTACTS_PERMISSION_REQ_CODE);
 
-        btButtonAddCustomers=findViewById(R.id.imButtonAddCustomers);
-         btButtonAddCustomers.setOnClickListener(new View.OnClickListener() {
-             @Override
-             public void onClick(View view) {
-                 boolean isPermissionGranted = ActivityCompat.checkSelfPermission(Home_page.this, Manifest.permission.READ_CONTACTS) == PackageManager.PERMISSION_GRANTED;
-                 if (!isPermissionGranted) {
-                     ActivityCompat.requestPermissions(Home_page.this, new String[]{Manifest.permission.READ_CONTACTS}, CONTACTS_PERMISSION_REQ_CODE);
+                } else {
+                    Toast.makeText(Home_page.this, "Contacts Permission already granted", Toast.LENGTH_SHORT).show();
+                }
 
-                 } else {
-                     Toast.makeText(Home_page.this, "Contacts Permission already granted", Toast.LENGTH_SHORT).show();
-                 }
+            }
 
-             }
-
-         });
+        });
 
 
-        btImMoreButton=findViewById(R.id.btImMoreButton);
+        btImMoreButton = findViewById(R.id.btImMoreButton);
 
         btImMoreButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent2=new Intent(Home_page.this,ClickOnMore.class);
+                Intent intent2 = new Intent(Home_page.this, ClickOnMore.class);
                 startActivity(intent2);
 
             }
